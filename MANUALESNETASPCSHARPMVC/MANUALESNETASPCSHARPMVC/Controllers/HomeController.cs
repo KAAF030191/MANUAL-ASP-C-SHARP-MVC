@@ -15,7 +15,7 @@ namespace MANUALESNETASPCSHARPMVC.Controllers
 
         public ActionResult About()
         {
-            ViewBag.Message = "Your application description page.";
+            ViewBag.Message = "Este es un mensaje enviado desde el controlador";
 
             return View();
         }
