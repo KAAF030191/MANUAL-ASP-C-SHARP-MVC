@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MANUALESNETASPCSHARPMVC.Entidad;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -10,17 +11,29 @@ namespace MANUALESNETASPCSHARPMVC.Controllers
     {
         //
         // GET: /Usuario/
-        public ActionResult Registrar(FormCollection values)
+        /*public ActionResult Registrar(FormCollection values)
         {
             if (Request.HttpMethod == "POST") 
             {
-                /*string nombre = Request.Form["txtNombre"];
+                string nombre = Request.Form["txtNombre"];
 
-                ViewBag.nombreRecuperado = nombre;*/
+                ViewBag.nombreRecuperado = nombre;
 
                 string nombre = values["txtNombre"];
 
                 ViewBag.nombreRecuperado = nombre;
+
+                return View();
+            }
+
+            return View();
+        }*/
+
+        public ActionResult Registrar(EntidadTUsuario entidadTUsuario) 
+        {
+            if (Request.HttpMethod == "POST")
+            {
+                ViewBag.nombreRecuperado = entidadTUsuario.txtNombre;
 
                 return View();
             }
