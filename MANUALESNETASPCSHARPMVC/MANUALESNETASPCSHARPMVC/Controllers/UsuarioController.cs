@@ -29,7 +29,7 @@ namespace MANUALESNETASPCSHARPMVC.Controllers
             return View();
         }*/
 
-        public ActionResult Registrar(EntidadTUsuario entidadTUsuario) 
+        /*public ActionResult Registrar(EntidadTUsuario entidadTUsuario) 
         {
             if (Request.HttpMethod == "POST")
             {
@@ -37,6 +37,22 @@ namespace MANUALESNETASPCSHARPMVC.Controllers
 
                 return View();
             }
+
+            return View();
+        }*/
+
+        [AcceptVerbs(HttpVerbs.Get)]
+        public ActionResult Registrar() 
+        {
+            return View();
+        }
+
+        [AcceptVerbs(HttpVerbs.Post)]
+        public ActionResult Registrar(FormCollection values) 
+        {
+            string nombre = values["txtNombre"];
+
+            ViewBag.nombreRecuperado = nombre;
 
             return View();
         }
