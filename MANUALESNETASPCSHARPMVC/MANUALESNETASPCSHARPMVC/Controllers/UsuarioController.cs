@@ -56,5 +56,20 @@ namespace MANUALESNETASPCSHARPMVC.Controllers
 
             return View();
         }
+
+        public ActionResult VerPorCodigoUsuario(string parametro1) 
+        {
+            ViewBag.codigoUsuario = parametro1;
+
+            return View();
+        }
+
+        public ActionResult VerPorCodigoUsuarioYNombre(string parametro1, string parametro2)
+        {
+            ViewBag.codigoUsuario = parametro1;
+            ViewBag.nombre = parametro2;
+
+            return View();
+        }
 	}
 }

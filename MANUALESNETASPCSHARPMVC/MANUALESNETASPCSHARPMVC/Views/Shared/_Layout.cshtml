@@ -26,6 +26,8 @@
                     <li>@Html.ActionLink("Acerca de", "About", "Home")</li>
                     <li>@Html.ActionLink("Contacto", "Contact", "Home")</li>
                     <li>@Html.ActionLink("Registrar usuario", "Registrar", "Usuario")</li>
+                    <li>@Html.ActionLink("Ver caso 1", "VerPorCodigoUsuario", "Usuario", new { parametro1 = "0000001" }, null)</li>
+                    <li>@Html.ActionLink("Ver caso 2", "VerPorCodigoUsuarioYNombre", "Usuario", new { parametro1 = "0000001", parametro2 = "Kevin Arnold Arias Figueroa" }, null)</li>
                 </ul>
                 @Html.Partial("_LoginPartial")
             </div>
