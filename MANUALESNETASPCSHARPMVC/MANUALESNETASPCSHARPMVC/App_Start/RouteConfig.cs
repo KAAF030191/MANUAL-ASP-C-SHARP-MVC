@@ -15,15 +15,9 @@ namespace MANUALESNETASPCSHARPMVC
 
             routes.MapRoute(
                 name: "Default",
-                url: "{controller}/{action}/{parametro1}/{parametro2}",
-                defaults: new { controller = "Home", action = "Index", parametro1 = UrlParameter.Optional, parametro2 = UrlParameter.Optional }
+                url: "{controller}/{action}/{parametro1}",
+                defaults: new { controller = "Home", action = "Index", parametro1 = UrlParameter.Optional }
             );
-
-            /*routes.MapRoute(
-                name: "UsuarioController",
-                url: "{controller}/{action}/{parametro1}/{parametro2}",
-                defaults: new { parametro1 = UrlParameter.Optional, parametro2 = UrlParameter.Optional }
-            );*/
         }
     }
 }

@@ -1,6 +1,27 @@
 ﻿<form action="/Usuario/Registrar" method="post">
     <label for="txtNombre">Nombre</label>
-    <input type="text" id="txtNombre" name="txtNombre" />
-    <input type="submit"  value="Enviar datos" />
+    <input type="text" id="txtNombre" name="txtNombre" class="form-control"/>
+    <br />
+    <label for="txtApellidoPaterno">Apellido paterno</label>
+    <input type="text" id="txtApellidoPaterno" name="txtApellidoPaterno" class="form-control" />
+    <br />
+    <label for="txtApellidoMaterno">Apellido materno</label>
+    <input type="text" id="txtApellidoMaterno" name="txtApellidoMaterno" class="form-control" />
+    <br />
+    <label for="txtCorreoElectronico">Correo electrónico</label>
+    <input type="text" id="txtCorreoElectronico" name="txtCorreoElectronico" class="form-control" />
+    <br />
+    <label for="txtContrasenia">Contraseña</label>
+    <input type="text" id="txtContrasenia" name="txtContrasenia" class="form-control" />
+    <br />
+    <label for="txtFechaNacimiento">Fecha de nacimiento</label>
+    <input type="date" id="txtFechaNacimiento" name="txtFechaNacimiento" class="form-control" />
+    <br />
+    <label>Sexo</label>
+    <label for="radioSexoM">Masculino</label>
+    <input type="radio" id="radioSexoM" name="radioSexo" value="M" />
+    <label for="radioSexoF">Femenino</label>
+    <input type="radio" id="radioSexoF" name="radioSexo" value="F" />
+    <br />
+    <input type="submit"  value="Enviar datos" class="btn btn-info"/>
 </form>
-<b>@ViewBag.nombreRecuperado</b>
